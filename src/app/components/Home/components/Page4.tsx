@@ -1,11 +1,7 @@
-import {FC} from 'react'
+import React from 'react'
 
-const Page4: FC = () => {
-    return (
-        <main>
-            <h1>Welcome to page4</h1>
-        </main>
-    )
+export default function Page4() {
+  return (
+    <div>Page4</div>
+  )
 }
-
-export default Page4;
