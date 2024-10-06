@@ -16,7 +16,7 @@ const Page1 = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="flex items-start space-x-2">
               <span className="text-blue-600 text-xl">✔️</span>
-              <p className="text-gray-600">You’ll be able to effortlessly build website listings</p>
+              <p className="text-gray-600">You'll be able to effortlessly build website listings</p>
             </div>
             <div className="flex items-start space-x-2">
               <span className="text-blue-600 text-xl">✔️</span>
@@ -36,7 +36,7 @@ const Page1 = () => {
         {/* Right image */}
         <div>
           <img 
-            src="https://img.lovepik.com/background/20211022/large/lovepik-blue-tech-background-image_401948233.jpg" 
+            src="Page1.jpg" 
             alt="Feature Image"
             className="w-full h-auto rounded-lg object-cover"
           />

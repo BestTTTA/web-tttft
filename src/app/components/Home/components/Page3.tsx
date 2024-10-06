@@ -17,7 +17,7 @@ const Page3 = () => {
         {/* First Card */}
         <div className="bg-white shadow-lg rounded-lg p-6">
           <img 
-            src="https://images.unsplash.com/photo-1497215842964-222b430dc094" 
+            src="Page3.1.jpg" 
             alt="For IT companies" 
             className="w-full h-48 object-cover rounded-md mb-4"
           />
@@ -31,7 +31,7 @@ const Page3 = () => {
         {/* Second Card */}
         <div className="bg-white shadow-lg rounded-lg p-6">
           <img 
-            src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853" 
+            src="Page3.2.jpg" 
             alt="For Startups" 
             className="w-full h-48 object-cover rounded-md mb-4"
           />
@@ -45,7 +45,7 @@ const Page3 = () => {
         {/* Third Card */}
         <div className="bg-white shadow-lg rounded-lg p-6">
           <img 
-            src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a" 
+            src="Page3.3.jpg" 
             alt="Partners" 
             className="w-full h-48 object-cover rounded-md mb-4"
           />
