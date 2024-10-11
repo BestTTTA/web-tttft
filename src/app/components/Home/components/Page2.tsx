@@ -63,7 +63,7 @@ const Page2 = () => {
           width: "700px", 
           height: "100%", 
           left: "0%", 
-          top: "4%", 
+          top: "3%", 
           zIndex: 0,
         }}
       ></div>

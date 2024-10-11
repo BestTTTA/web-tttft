@@ -39,7 +39,7 @@ const Page3 = () => {
             </div>
           </div>
           {/* Title */}
-          <h3 className="text-lg font-semibold mb-3">For IT companies</h3>
+          <h3 className="text-lg font-semibold mb-4">For IT companies</h3>
           {/* Description */}
           <p className="text-gray-600 mb-20">
             Lorem ipsum amet, consectetur adipiscing elit, sed do eiusmod tempor
