@@ -1,59 +1,144 @@
-import React from 'react';
+import React from "react";
 
 const Page3 = () => {
   return (
-    <section className="py-16 px-6 bg-white">
-      {/* Header Section */}
+    <section className="py-16 px-7 bg-black">
+      {/* Heading Section */}
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold mb-4">Made for everyone</h1>
-        <p className="text-gray-600 max-w-2xl mx-auto">
-          นี่คือข้อความที่สาธิตเกี่ยวกับการอธิบายผลิตภัณฑ์หรือบริการที่จะนำเสนอในเว็บไซต์ของคุณ
-          ให้เหมาะสมกับผู้ใช้ทุกคน
+        <h2
+          className="text-4xl font-bold mb-4"
+          style={{
+            background:
+              "linear-gradient(to right, #cccccc 50%, #fbbf24, #f59e0b, #d97706)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+          }}
+        >
+          Made for everyone
+        </h2>
+        <p className="text-gray-600">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
       </div>
 
       {/* Card Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* First Card */}
-        <div className="bg-white shadow-lg rounded-lg p-6">
-          <img 
-            src="Page3.1.jpg" 
-            alt="For IT companies" 
-            className="w-full h-48 object-cover rounded-md mb-4"
-          />
-          <h3 className="text-lg font-semibold mb-2">For IT companies</h3>
-          <p className="text-gray-600 mb-4">
-            Lorem ipsum amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua.
+        <div className="bg-white shadow-lg rounded-lg text-center relative">
+          {/* Image */}
+          <div className="w-full mb-8 relative">
+            <img
+              src="Page3.1.jpg"
+              alt="For IT companies"
+              className="w-full h-full object-cover rounded-md"
+            />
+            {/* Briefcase Icon overlapping the image */}
+            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-white p-2 rounded-full shadow-md">
+              <img src="figure.jpg" alt="Briefcase Icon" className="w-8 h-8" />
+            </div>
+          </div>
+          {/* Title */}
+          <h3 className="text-lg font-semibold mb-3">For IT companies</h3>
+          {/* Description */}
+          <p className="text-gray-600 mb-20">
+            Lorem ipsum amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt labore et dolore magna aliqua.
           </p>
-          <button className="bg-blue-500 text-white py-2 px-4 rounded-full">Read More</button>
+          {/* Button */}
+          <button
+            className="text-white py-2 px-5 rounded-full"
+            style={{
+              background: "linear-gradient(to bottom, #0079ff, #001F54)",
+              border: "none",
+              boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+              position: "absolute", 
+              left: "50%", 
+              transform: "translate(-50%, 50%)", 
+              top: "93%", 
+            }}
+          >
+            Read More
+          </button>
         </div>
 
         {/* Second Card */}
-        <div className="bg-white shadow-lg rounded-lg p-6">
-          <img 
-            src="Page3.2.jpg" 
-            alt="For Startups" 
-            className="w-full h-48 object-cover rounded-md mb-4"
-          />
-          <h3 className="text-lg font-semibold mb-2">For Startups</h3>
-          <p className="text-gray-600 mb-4">
-            Lorem ipsum amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua.
+        <div className="bg-white shadow-lg rounded-lg text-center relative">
+          {/* Image */}
+          <div className="w-full mb-8 relative">
+            <img
+              src="Page3.2.jpg"
+              alt="For Startups"
+              className="w-full h-full object-cover rounded-md"
+            />
+            {/* Briefcase Icon overlapping the image */}
+            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-white p-2 rounded-full shadow-md">
+              <img src="figure1.jpg" alt="Briefcase Icon" className="w-8 h-8" />
+            </div>
+          </div>
+
+          {/* Title */}
+          <h3 className="text-lg font-semibold mb-3">For Startups</h3>
+
+          {/* Description */}
+          <p className="text-gray-600 mb-20">
+            Lorem ipsum amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt labore et dolore magna aliqua.
           </p>
-          <button className="bg-blue-500 text-white py-2 px-4 rounded-full">Read More</button>
+
+          {/* Button */}
+          <button
+            className="text-white py-2 px-5 rounded-full"
+            style={{
+              background: "linear-gradient(to bottom, #0079ff, #001F54)",
+              border: "none",
+              boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+              position: "absolute", 
+              left: "50%", 
+              transform: "translate(-50%, 50%)", 
+              top: "93%", 
+            }}
+          >
+            Read More
+          </button>
         </div>
 
         {/* Third Card */}
-        <div className="bg-white shadow-lg rounded-lg p-6">
-          <img 
-            src="Page3.3.jpg" 
-            alt="Partners" 
-            className="w-full h-48 object-cover rounded-md mb-4"
-          />
-          <h3 className="text-lg font-semibold mb-2">Partners</h3>
-          <p className="text-gray-600 mb-4">
-            Lorem ipsum amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua.
+        <div className="bg-white shadow-lg rounded-lg text-center relative">
+          {/* Image */}
+          <div className="w-full mb-8 relative">
+            <img
+              src="Page3.3.jpg"
+              alt="Partners"
+              className="w-full h-full object-cover rounded-md"
+            />
+            {/* Briefcase Icon overlapping the image */}
+            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-white p-2 rounded-full shadow-md">
+              <img src="figur2.jpg" alt="Briefcase Icon" className="w-8 h-8" />
+            </div>
+          </div>
+          {/* Title */}
+          <h3 className="text-lg font-semibold mb-3">Partners</h3>
+          {/* Description */}
+          <p className="text-gray-600 mb-20">
+            Lorem ipsum amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt labore et dolore magna aliqua.
           </p>
-          <button className="bg-blue-500 text-white py-2 px-4 rounded-full">Read More</button>
+          {/* Button */}
+          <button
+            className="text-white py-2 px-5 rounded-full"
+            style={{
+              background: "linear-gradient(to bottom, #0079ff, #001F54)",
+              border: "none",
+              boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+              position: "absolute", 
+              left: "50%", 
+              transform: "translate(-50%, 50%)", 
+              top: "93%", 
+            }}
+          >
+            Read More
+          </button>
         </div>
       </div>
     </section>
