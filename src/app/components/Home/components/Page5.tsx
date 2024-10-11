@@ -1,16 +1,15 @@
 "use client";
 
 import React, { useState } from "react";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { FaArrowRight } from "react-icons/fa";
+import "swiper/css";
 
 const Page5 = () => {
   const [selectedPortfolio, setSelectedPortfolio] = useState("ecommerce");
 
   return (
-    <section className="py-1 px-0 bg-black text-white min-h-screen relative">
+    <section className="py-1 px-6 bg-black text-white min-h-screen relative">
       <div className="relative h-screen flex flex-col justify-center items-center">
         <img
           src="Combined Shape.png"
@@ -37,156 +36,239 @@ const Page5 = () => {
 
         <div className="max-w-screen-lg mx-auto grid grid-cols-3 gap-8 justify-center items-center">
           {/* Left side - Portfolio category navigation */}
-          <div className="relative z-10 col-span-1 h-full flex flex-col justify-center items-center mt-[-500px] ml-[-250px]">
-            {/* Moved to the left */}
-            <ul className="space-y-4 text-gray-400 text-xl">
+          <div className="relative z-10 col-span-1 h-full flex flex-col justify-center items-start mr-30 mt-[-450px] ml-[-200px]"> {/* เพิ่ม ml-[-50px] เพื่อขยับไปทางซ้าย */}
+            <ul className="space-y-4 text-gray-400 text-[40px] text-left"> {/* ขยับข้อความไปทางซ้ายด้วย text-left */}
               <li
                 className={`cursor-pointer ${
                   selectedPortfolio === "ecommerce" ? "text-pink-500" : "text-white"
-                }`}
+                } flex items-center`}
                 onClick={() => setSelectedPortfolio("ecommerce")}
               >
                 Ecommerce Websites
+                {selectedPortfolio === "ecommerce" && (
+                  <FaArrowRight
+                    className="ml-4 text-pink-500 text-lg"
+                    style={{ transform: "scaleX(2)" }}
+                  />
+                )}
               </li>
               <li
                 className={`cursor-pointer ${
                   selectedPortfolio === "machine-learning" ? "text-pink-500" : "text-white"
-                }`}
+                } flex items-center`}
                 onClick={() => setSelectedPortfolio("machine-learning")}
               >
                 Machine Learning
+                {selectedPortfolio === "machine-learning" && (
+                  <FaArrowRight
+                    className="ml-4 text-pink-500 text-lg"
+                    style={{ transform: "scaleX(2)" }}
+                  />
+                )}
               </li>
               <li
                 className={`cursor-pointer ${
                   selectedPortfolio === "frontend" ? "text-pink-500" : "text-white"
-                }`}
+                } flex items-center`}
                 onClick={() => setSelectedPortfolio("frontend")}
               >
                 Front-End Developer
+                {selectedPortfolio === "frontend" && (
+                  <FaArrowRight
+                    className="ml-4 text-pink-500 text-lg"
+                    style={{ transform: "scaleX(2)" }}
+                  />
+                )}
               </li>
               <li
                 className={`cursor-pointer ${
                   selectedPortfolio === "infrastructure" ? "text-pink-500" : "text-white"
-                }`}
+                } flex items-center`}
                 onClick={() => setSelectedPortfolio("infrastructure")}
               >
                 Infrastructure
+                {selectedPortfolio === "infrastructure" && (
+                  <FaArrowRight
+                    className="ml-4 text-pink-500 text-lg"
+                    style={{ transform: "scaleX(2)" }}
+                  />
+                )}
               </li>
             </ul>
           </div>
 
-          {/* Right side - Swiper slider with overlapping images */}
-          <div className="col-span-2 relative">
-            {selectedPortfolio === "ecommerce" && (
-              <div className="relative w-[800px] h-[600px]">
-                {/* First image */}
-                <div className="absolute top-20 left-0 z-10 w-[371px] h-[488px]">
-                  <img
-                    src="Rectangle 4149.png"
-                    alt="Ecommerce Portfolio Image 1"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                {/* Second image overlapping */}
-                <div className="absolute top-[-80px] left-[250px] z-20 w-[435px] h-[572px]">
-                  <img
-                    src="Rectangle 4148.png"
-                    alt="Ecommerce Portfolio Image 2"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-            )}
-
-            {selectedPortfolio === "machine-learning" && (
-              <div className="relative w-[800px] h-[600px]">
-                {/* First image */}
-                <div className="absolute top-20 left-0 z-10 w-[371px] h-[488px]">
-                  <img
-                    src="https://awareth.aware-cdn.net/wp-content/uploads/2018/03/MachineLearning_01_Header.jpg"
-                    alt="Machine Learning Portfolio Image 1"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                {/* Second image overlapping */}
-                <div className="absolute top-[-80px] left-[250px] z-20 w-[435px] h-[572px]">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdd8d2j_BYJ5rat1afXCt_rCDAp7f3u16Fog&s"
-                    alt="Machine Learning Portfolio Image 2"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-            )}
-
-            {selectedPortfolio === "frontend" && (
-              <div className="relative w-[800px] h-[600px]">
-                {/* First image */}
-                <div className="absolute top-20 left-0 z-10 w-[371px] h-[488px]">
-                  <img
-                    src="https://media.licdn.com/dms/image/D5612AQFfhTEictqBHA/article-cover_image-shrink_720_1280/0/1716965604025?e=2147483647&v=beta&t=QQbiRZaZNurRKVw6bW1J0hG5x2f-7PMAowmfdFF3Dz4"
-                    alt="Frontend Portfolio Image 1"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                {/* Second image overlapping */}
-                <div className="absolute top-[-80px] left-[250px] z-20 w-[435px] h-[572px]">
-                  <img
-                    src="https://cdn.hashnode.com/res/hashnode/image/upload/v1680413762129/71e707fb-1dbf-4f50-9e0b-a77d03101b79.jpeg"
-                    alt="Frontend Portfolio Image 2"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-            )}
-
-            {selectedPortfolio === "infrastructure" && (
-              <Swiper spaceBetween={30} modules={[Navigation]} className="swiper-container">
-                {/* First set of images */}
-                <SwiperSlide>
-                  <div className="relative w-[800px] h-[600px]">
-                    {/* First image */}
-                    <div className="absolute top-40 left-0 z-10 w-[371px] h-[488px]">
+          {/* Right side - Swiper slider */}
+          <div className="col-span-2">
+            <Swiper
+              spaceBetween={335} // Adjust the space between images
+              slidesPerView={3} // Display 3 images at a time
+              centeredSlides={true}
+              className="w-full h-[500px]"
+            >
+              {selectedPortfolio === "ecommerce" && (
+                <>
+                  <SwiperSlide>
+                    <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
                       <img
-                        src="https://personet.co.th/wp-content/uploads/2022/08/image2.png"
+                        src="Rectangle 4149.png"
+                        alt="Ecommerce Portfolio Image 1"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
+                      <img
+                        src="Rectangle 4148.png"
+                        alt="Ecommerce Portfolio Image 2"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
+                      <img
+                        src="Rectangle 7.png"
+                        alt="Ecommerce Portfolio Image 3"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
+                      <img
+                        src="cat.png"
+                        alt="Ecommerce Portfolio Image 4"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </SwiperSlide>
+                </>
+              )}
+
+              {selectedPortfolio === "machine-learning" && (
+                <>
+                  <SwiperSlide>
+                    <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
+                      <img
+                        src="m1.png"
+                        alt="Machine Learning Portfolio Image 1"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
+                      <img
+                        src="m2.png"
+                        alt="Machine Learning Portfolio Image 2"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
+                      <img
+                        src="m3.png"
+                        alt="Machine Learning Portfolio Image 3"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
+                      <img
+                        src="m4.png"
+                        alt="Machine Learning Portfolio Image 4"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </SwiperSlide>
+                </>
+              )}
+
+              {selectedPortfolio === "frontend" && (
+                <>
+                  <SwiperSlide>
+                    <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
+                      <img
+                        src="p1.png"
+                        alt="Frontend Portfolio Image 1"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
+                      <img
+                        src="p2.png"
+                        alt="Frontend Portfolio Image 2"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
+                      <img
+                        src="p3.png"
+                        alt="Frontend Portfolio Image 1"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
+                      <img
+                        src="p4.png"
+                        alt="Frontend Portfolio Image 2"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </SwiperSlide>
+                </>
+              )}
+
+              {selectedPortfolio === "infrastructure" && (
+                <>
+                  <SwiperSlide>
+                    <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
+                      <img
+                        src="n1.png"
                         alt="Infrastructure Portfolio Image 1"
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    {/* Second image overlapping */}
-                    <div className="absolute top-[-0px] left-[250px] z-20 w-[435px] h-[572px]">
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
                       <img
-                        src="https://www.readyidc.com/wp-content/uploads/2021/12/3-100-1024x576.jpg"
+                        src="n2.png"
                         alt="Infrastructure Portfolio Image 2"
                         className="w-full h-full object-cover"
                       />
                     </div>
-                  </div>
-                </SwiperSlide>
-
-                {/* Second set of images */}
-                <SwiperSlide>
-                  <div className="relative w-[800px] h-[600px]">
-                    {/* First image */}
-                    <div className="absolute top-40 left-0 z-10 w-[371px] h-[488px]">
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
                       <img
-                        src="https://lh3.googleusercontent.com/proxy/i4SLEop5epfJL2o_owwGG9klfaWHO3GLf7p4RMF8TNVQKsGgr0I4rd2efTfe3FMzT6n3D01nwQAE2pvIFDqkINyHJXQcepn2NIyMqK__NbFeYyz5Regi7HsSYhVi_xovgamZyqnQHBILIaUQkzpEOAZYwart6s6RhRDN7UIy_n2Eao65p8Ry3hwAYglV"
-                        alt="Infrastructure Portfolio Image 3"
+                        src="n3.png"
+                        alt="Infrastructure Portfolio Image 1"
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    {/* Second image overlapping */}
-                    <div className="absolute top-[-0px] left-[250px] z-20 w-[435px] h-[572px]">
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
                       <img
-                        src="https://png.pngtree.com/thumb_back/fh260/background/20230610/pngtree-an-orange-kitten-sitting-on-a-table-with-drops-of-water-image_2935343.jpg"
-                        alt="Infrastructure Portfolio Image 4"
+                        src="n4.png"
+                        alt="Infrastructure Portfolio Image 2"
                         className="w-full h-full object-cover"
                       />
                     </div>
-                  </div>
-                </SwiperSlide>
-              </Swiper>
-            )}
+                  </SwiperSlide>
+                </>
+              )}
+            </Swiper>
           </div>
         </div>
       </div>
