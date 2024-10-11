@@ -9,7 +9,7 @@ const Page3 = () => {
           className="text-4xl font-bold mb-4"
           style={{
             background:
-              "linear-gradient(to right, #cccccc 50%, #fbbf24, #f59e0b, #d97706)",
+              "linear-gradient(to right, #cccccc 50%, #fbbf24, #ea580c)",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
           }}

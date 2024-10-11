@@ -3,7 +3,7 @@ import React from 'react';
 const Page1 = () => {
   return (
     <section 
-      className="py-16 px-6 bg-black" 
+      className="py-16 px-8 bg-black" 
       style={{ 
         backgroundImage: "url('Page11.jpg')", 
         backgroundSize: 'cover', 
@@ -15,8 +15,8 @@ const Page1 = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Left content */}
         <div>
-          <h2 className="text-5xl font-bold mb-8 text-white mt-6">Best feature info goes just here</h2>
-          <p className="text-gray-200 mb-10">
+          <h2 className="text-5xl font-bold mb-20 text-white mt-10">Best feature info goes just here</h2>
+          <p className="text-gray-200 mb-8">
             Lorem ipsum dolor sit amet consectetur. Dictum porta elementum quam rutrum lacus. Ullamcorper facilisi purus 
             tortor volutpat rutrum adipiscPing semper pharetra. Dignissim vitae at mauris nec quam ipsum viverra.
           </p>
@@ -43,7 +43,7 @@ const Page1 = () => {
 
           {/* White Box below text */}
           <div 
-            className="bg-white p-6 rounded-lg shadow-lg"
+            className="bg-white p-6 rounded-lg shadow-lg "
             style={{
               width: '200px', 
               height: '80px'
