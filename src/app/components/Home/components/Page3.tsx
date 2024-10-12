@@ -30,13 +30,21 @@ const Page3 = () => {
           {/* Image */}
           <div className="w-full mb-8 relative">
             <Image
-              src="Page3.1.jpg"
+              src="/Page3.1.jpg" // Make sure the path starts with "/"
               alt="For IT companies"
               className="w-full h-full object-cover rounded-md"
+              width={500} // Add actual width
+              height={300} // Add actual height
             />
             {/* Briefcase Icon overlapping the image */}
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-white p-2 rounded-full shadow-md">
-              <Image src="figure.jpg" alt="Briefcase Icon" className="w-8 h-8" />
+              <Image
+                src="/figure.jpg"
+                alt="Briefcase Icon"
+                className="w-8 h-8"
+                width={32}
+                height={32}
+              />
             </div>
           </div>
           {/* Title */}
@@ -53,10 +61,10 @@ const Page3 = () => {
               background: "linear-gradient(to bottom, #0079ff, #001F54)",
               border: "none",
               boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
-              position: "absolute", 
-              left: "50%", 
-              transform: "translate(-50%, 50%)", 
-              top: "93%", 
+              position: "absolute",
+              left: "50%",
+              transform: "translate(-50%, 50%)",
+              top: "93%",
             }}
           >
             Read More
@@ -68,13 +76,21 @@ const Page3 = () => {
           {/* Image */}
           <div className="w-full mb-8 relative">
             <Image
-              src="Page3.2.jpg"
+              src="/Page3.2.jpg"
               alt="For Startups"
               className="w-full h-full object-cover rounded-md"
+              width={500}
+              height={300}
             />
             {/* Briefcase Icon overlapping the image */}
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-white p-2 rounded-full shadow-md">
-              <Image src="figure1.jpg" alt="Briefcase Icon" className="w-8 h-8" />
+              <Image
+                src="/figure1.jpg"
+                alt="Briefcase Icon"
+                className="w-8 h-8"
+                width={32}
+                height={32}
+              />
             </div>
           </div>
 
@@ -94,10 +110,10 @@ const Page3 = () => {
               background: "linear-gradient(to bottom, #0079ff, #001F54)",
               border: "none",
               boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
-              position: "absolute", 
-              left: "50%", 
-              transform: "translate(-50%, 50%)", 
-              top: "93%", 
+              position: "absolute",
+              left: "50%",
+              transform: "translate(-50%, 50%)",
+              top: "93%",
             }}
           >
             Read More
@@ -109,13 +125,21 @@ const Page3 = () => {
           {/* Image */}
           <div className="w-full mb-8 relative">
             <Image
-              src="Page3.3.jpg"
+              src="/Page3.3.jpg"
               alt="Partners"
               className="w-full h-full object-cover rounded-md"
+              width={500}
+              height={300}
             />
             {/* Briefcase Icon overlapping the image */}
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-white p-2 rounded-full shadow-md">
-              <Image src="figur2.jpg" alt="Briefcase Icon" className="w-8 h-8" />
+              <Image
+                src="/figur2.jpg"
+                alt="Briefcase Icon"
+                className="w-8 h-8"
+                width={32}
+                height={32}
+              />
             </div>
           </div>
           {/* Title */}
@@ -132,10 +156,10 @@ const Page3 = () => {
               background: "linear-gradient(to bottom, #0079ff, #001F54)",
               border: "none",
               boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
-              position: "absolute", 
-              left: "50%", 
-              transform: "translate(-50%, 50%)", 
-              top: "93%", 
+              position: "absolute",
+              left: "50%",
+              transform: "translate(-50%, 50%)",
+              top: "93%",
             }}
           >
             Read More
