@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Page4 = () => {
   return (
@@ -19,7 +20,7 @@ const Page4 = () => {
             {/* Feature 1 */}
             <li className="flex items-center space-x-3 justify-center">
               <span className="rounded-full p-2">
-                <img src="/Icons-feature.png" alt="Feature 1" className="w-8 h-8" />
+                <Image src="/Icons-feature.png" alt="Feature 1" className="w-8 h-8" />
               </span>
               <span>nothatIvefoundyou,Imnever</span>
             </li>
@@ -27,7 +28,7 @@ const Page4 = () => {
             {/* Feature 2 */}
             <li className="flex items-center space-x-3 justify-center">
               <span className="rounded-full p-2">
-                <img src="/Icons-feature.png" alt="Feature 2" className="w-8 h-8" />
+                <Image src="/Icons-feature.png" alt="Feature 2" className="w-8 h-8" />
               </span>
               <span>Evenafterallthistime,youstillkii</span>
             </li>
@@ -35,7 +36,7 @@ const Page4 = () => {
             {/* Feature 3 */}
             <li className="flex items-center space-x-3 justify-center">
               <span className="rounded-full p-2">
-                <img src="/Icons-feature.png" alt="Feature 3" className="w-8 h-8" />
+                <Image src="/Icons-feature.png" alt="Feature 3" className="w-8 h-8" />
               </span>
               <span>Becauseyoreinmylife,Iknow</span>
             </li>
@@ -43,7 +44,7 @@ const Page4 = () => {
             {/* Feature 4 */}
             <li className="flex items-center space-x-3 justify-center">
               <span className="rounded-full p-2">
-                <img src="/Icons-feature.png" alt="Feature 4" className="w-8 h-8" />
+                <Image src="/Icons-feature.png" alt="Feature 4" className="w-8 h-8" />
               </span>
               <span>Youhavemademeanincredibly</span>
             </li>
@@ -52,7 +53,7 @@ const Page4 = () => {
 
         {/* Image section */}
         <div className="flex justify-center">
-          <img
+          <Image
             src="/Frame 2.png"
             alt="Feature illustration"
             className="rounded-lg shadow-lg"
@@ -63,7 +64,7 @@ const Page4 = () => {
 
       {/* Additional Image section on the left */}
       <div className="absolute top-0 left-0 transform translate-y-40 ml-0">
-        <img
+        <Image
           src="/Group.png"
           alt="Additional illustration"
           style={{ width: '841.39px', height: '442px' }}

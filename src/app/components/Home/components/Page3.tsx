@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Page3 = () => {
   return (
@@ -28,14 +29,14 @@ const Page3 = () => {
         <div className="bg-white shadow-lg rounded-lg text-center relative">
           {/* Image */}
           <div className="w-full mb-8 relative">
-            <img
+            <Image
               src="Page3.1.jpg"
               alt="For IT companies"
               className="w-full h-full object-cover rounded-md"
             />
             {/* Briefcase Icon overlapping the image */}
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-white p-2 rounded-full shadow-md">
-              <img src="figure.jpg" alt="Briefcase Icon" className="w-8 h-8" />
+              <Image src="figure.jpg" alt="Briefcase Icon" className="w-8 h-8" />
             </div>
           </div>
           {/* Title */}
@@ -66,14 +67,14 @@ const Page3 = () => {
         <div className="bg-white shadow-lg rounded-lg text-center relative">
           {/* Image */}
           <div className="w-full mb-8 relative">
-            <img
+            <Image
               src="Page3.2.jpg"
               alt="For Startups"
               className="w-full h-full object-cover rounded-md"
             />
             {/* Briefcase Icon overlapping the image */}
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-white p-2 rounded-full shadow-md">
-              <img src="figure1.jpg" alt="Briefcase Icon" className="w-8 h-8" />
+              <Image src="figure1.jpg" alt="Briefcase Icon" className="w-8 h-8" />
             </div>
           </div>
 
@@ -107,14 +108,14 @@ const Page3 = () => {
         <div className="bg-white shadow-lg rounded-lg text-center relative">
           {/* Image */}
           <div className="w-full mb-8 relative">
-            <img
+            <Image
               src="Page3.3.jpg"
               alt="Partners"
               className="w-full h-full object-cover rounded-md"
             />
             {/* Briefcase Icon overlapping the image */}
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-white p-2 rounded-full shadow-md">
-              <img src="figur2.jpg" alt="Briefcase Icon" className="w-8 h-8" />
+              <Image src="figur2.jpg" alt="Briefcase Icon" className="w-8 h-8" />
             </div>
           </div>
           {/* Title */}
