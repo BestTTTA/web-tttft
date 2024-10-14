@@ -5,7 +5,7 @@ const Page1 = () => {
     <section 
       className="py-16 px-8 bg-black" 
       style={{ 
-        backgroundImage: "url('Page11.jpg')", 
+        backgroundImage: "url('/Page11.jpg')", 
         backgroundSize: 'cover', 
         backgroundPosition: 'center', 
         backgroundRepeat: 'no-repeat',

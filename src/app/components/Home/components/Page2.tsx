@@ -48,7 +48,7 @@ const Page2 = () => {
     <section
       className="relative py-10 px-5"
       style={{
-        backgroundColor: "black",
+        backgroundColor: "black", // พื้นหลังสีดำ
         minHeight: "100vh",
       }}
     >
@@ -57,14 +57,14 @@ const Page2 = () => {
         className="absolute"
         style={{
           backgroundImage: "url('/Gradients.jpg')",
-          backgroundSize: "cover", 
-          backgroundPosition: "center", 
-          backgroundRepeat: "no-repeat", 
-          width: "700px", 
-          height: "100%", 
-          left: "0%", 
-          top: "3%", 
-          zIndex: 0,
+          backgroundSize: "cover", // ปรับเป็น cover เพื่อให้ภาพเต็มพื้นที่ที่กำหนด
+          backgroundPosition: "center", // จัดตำแหน่งตรงกลาง
+          backgroundRepeat: "no-repeat", // ไม่ให้ภาพซ้ำ
+          width: "700px", // ขยายความกว้างของภาพตามความต้องการ
+          height: "100%", // ขยายความสูงของภาพให้เต็มพื้นที่
+          left: "0%", // จัดภาพให้อยู่ตรงกับขอบซ้าย
+          top: "4%", // จัดให้อยู่ด้านบนสุด
+          zIndex: 0, // อยู่ข้างล่างของ content อื่นๆ
         }}
       ></div>
       {/* เนื้อหาที่ซ้อนบนพื้นหลัง */}
@@ -93,7 +93,7 @@ const Page2 = () => {
         <p
           className="text-center text-white italic"
           style={{
-            marginBottom: "2rem", 
+            marginBottom: "2rem", // ปรับระยะห่างระหว่างข้อความและกรอบด้านล่าง
           }}
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed
@@ -108,9 +108,9 @@ const Page2 = () => {
               style={{
                 background:
                   (Math.floor(index / 4) + index) % 2 === 0
-                    ? "rgba(55, 65, 81, 0.5)" 
-                    : "rgba(17, 24, 39, 0.5)", 
-                backdropFilter: "blur(10px)", 
+                    ? "rgba(55, 65, 81, 0.5)" // สีจางสำหรับกรอบแบบเทา
+                    : "rgba(17, 24, 39, 0.5)", // สีจางสำหรับกรอบแบบน้ำเงินเข้ม
+                backdropFilter: "blur(10px)", // เพิ่มความโปร่งใสและเอฟเฟกต์เบลอ
               }}
             >
               <div className="bg-white w-12 h-12 mb-3 rounded-lg"></div>
