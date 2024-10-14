@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image"; // เพิ่มการนำเข้า Image จาก next/image
 
 const Page3 = () => {
   return (
@@ -21,38 +22,28 @@ const Page3 = () => {
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
       </div>
-
       {/* Card Section */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* First Card */}
         <div className="bg-white shadow-lg rounded-lg text-center relative">
           {/* Image */}
           <div className="w-full mb-8 relative">
-<<<<<<< HEAD
             <Image
-              src="/Page3.1.jpg" // Make sure the path starts with "/"
-=======
-            <img
-              src="Page3.1.jpg"
->>>>>>> a8e2792 (update page1-3)
+              src="/Figure3.1.jpg"
               alt="For IT companies"
               className="w-full h-full object-cover rounded-md"
-              width={500} // Add actual width
-              height={300} // Add actual height
+              width={500}
+              height={300}
             />
             {/* Briefcase Icon overlapping the image */}
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-white p-2 rounded-full shadow-md">
-<<<<<<< HEAD
               <Image
                 src="/figure.jpg"
                 alt="Briefcase Icon"
                 className="w-8 h-8"
-                width={32}
-                height={32}
+                width={50}
+                height={50}
               />
-=======
-              <img src="figure.jpg" alt="Briefcase Icon" className="w-8 h-8" />
->>>>>>> a8e2792 (update page1-3)
             </div>
           </div>
           {/* Title */}
@@ -78,18 +69,12 @@ const Page3 = () => {
             Read More
           </button>
         </div>
-
         {/* Second Card */}
         <div className="bg-white shadow-lg rounded-lg text-center relative">
           {/* Image */}
           <div className="w-full mb-8 relative">
-<<<<<<< HEAD
             <Image
-              src="/Page3.2.jpg"
-=======
-            <img
-              src="Page3.2.jpg"
->>>>>>> a8e2792 (update page1-3)
+              src="/Figure3.2.jpg"
               alt="For Startups"
               className="w-full h-full object-cover rounded-md"
               width={500}
@@ -97,17 +82,13 @@ const Page3 = () => {
             />
             {/* Briefcase Icon overlapping the image */}
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-white p-2 rounded-full shadow-md">
-<<<<<<< HEAD
               <Image
                 src="/figure1.jpg"
                 alt="Briefcase Icon"
                 className="w-8 h-8"
-                width={32}
-                height={32}
+                width={50}
+                height={50}
               />
-=======
-              <img src="figure1.jpg" alt="Briefcase Icon" className="w-8 h-8" />
->>>>>>> a8e2792 (update page1-3)
             </div>
           </div>
 
@@ -136,37 +117,26 @@ const Page3 = () => {
             Read More
           </button>
         </div>
-
         {/* Third Card */}
         <div className="bg-white shadow-lg rounded-lg text-center relative">
           {/* Image */}
-<<<<<<< HEAD
           <div className="w-full mb-8 relative">
             <Image
-              src="/Page3.3.jpg"
-=======
-          <div className="w-full mb-20 relative">
-            <img
-              src="Page3.3.jpg"
->>>>>>> a8e2792 (update page1-3)
-              alt="Partners"
+              src="/Figure3.3.jpg"
+              alt="For Startups"
               className="w-full h-full object-cover rounded-md"
               width={500}
               height={300}
             />
             {/* Briefcase Icon overlapping the image */}
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-white p-2 rounded-full shadow-md">
-<<<<<<< HEAD
               <Image
                 src="/figur2.jpg"
                 alt="Briefcase Icon"
                 className="w-8 h-8"
-                width={32}
-                height={32}
+                width={50}
+                height={50}
               />
-=======
-              <img src="figur2.jpg" alt="Briefcase Icon" className="w-8 h-8" />
->>>>>>> a8e2792 (update page1-3)
             </div>
           </div>
           {/* Title */}
