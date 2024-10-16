@@ -13,14 +13,18 @@ const Page5 = () => {
     <section className="py-1 px-6 bg-black text-white min-h-screen relative">
       <div className="relative h-screen flex flex-col justify-center items-center">
         <Image
-          src="Combined Shape.png"
+          src="/Combined Shape.png"
           alt="relative h-30 w-30"
+          width={250}
+          height={370}
           className="absolute bottom-0 right-0 h-[370px] w-[250px] object-right"
         />
         <div className="absolute top-0 left-[-20px] w-[400px] h-full z-0">
           <Image
-            src="Ornaments.png"
+            src="/Ornaments.png"
             alt="Background Image"
+            width={400}
+            height={400}
             className="w-full h-full object-cover"
           />
         </div>
@@ -37,8 +41,8 @@ const Page5 = () => {
 
         <div className="max-w-screen-lg mx-auto grid grid-cols-3 gap-8 justify-center items-center">
           {/* Left side - Portfolio category navigation */}
-          <div className="relative z-10 col-span-1 h-full flex flex-col justify-center items-start mr-30 mt-[-450px] ml-[-200px]"> {/* เพิ่ม ml-[-50px] เพื่อขยับไปทางซ้าย */}
-            <ul className="space-y-4 text-gray-400 text-[40px] text-left"> {/* ขยับข้อความไปทางซ้ายด้วย text-left */}
+          <div className="relative z-10 col-span-1 h-full flex flex-col justify-center items-start mr-30 mt-[-450px] ml-[-200px]">
+            <ul className="space-y-4 text-gray-400 text-[40px] text-left">
               <li
                 className={`cursor-pointer ${
                   selectedPortfolio === "ecommerce" ? "text-pink-500" : "text-white"
@@ -101,8 +105,8 @@ const Page5 = () => {
           {/* Right side - Swiper slider */}
           <div className="col-span-2">
             <Swiper
-              spaceBetween={335} // Adjust the space between images
-              slidesPerView={3} // Display 3 images at a time
+              spaceBetween={335} 
+              slidesPerView={3} 
               centeredSlides={true}
               className="w-full h-[500px]"
             >
@@ -111,8 +115,10 @@ const Page5 = () => {
                   <SwiperSlide>
                     <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
                       <Image
-                        src="Rectangle 4149.png"
+                        src="/Rectangle 4149.png"
                         alt="Ecommerce Portfolio Image 1"
+                        width={250}
+                        height={350}
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -120,8 +126,10 @@ const Page5 = () => {
                   <SwiperSlide>
                     <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
                       <Image
-                        src="Rectangle 4148.png"
+                        src="/Rectangle 4148.png"
                         alt="Ecommerce Portfolio Image 2"
+                        width={250}
+                        height={350}
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -129,8 +137,10 @@ const Page5 = () => {
                   <SwiperSlide>
                     <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
                       <Image
-                        src="Rectangle 7.png"
+                        src="/Rectangle 7.png"
                         alt="Ecommerce Portfolio Image 3"
+                        width={250}
+                        height={350}
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -138,8 +148,10 @@ const Page5 = () => {
                   <SwiperSlide>
                     <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
                       <Image
-                        src="cat.png"
+                        src="/cat.png"
                         alt="Ecommerce Portfolio Image 4"
+                        width={250}
+                        height={350}
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -152,8 +164,10 @@ const Page5 = () => {
                   <SwiperSlide>
                     <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
                       <Image
-                        src="m1.png"
+                        src="/m1.png"
                         alt="Machine Learning Portfolio Image 1"
+                        width={250}
+                        height={350}
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -161,8 +175,10 @@ const Page5 = () => {
                   <SwiperSlide>
                     <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
                       <Image
-                        src="m2.png"
+                        src="/m2.png"
                         alt="Machine Learning Portfolio Image 2"
+                        width={250}
+                        height={350}
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -170,8 +186,10 @@ const Page5 = () => {
                   <SwiperSlide>
                     <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
                       <Image
-                        src="m3.png"
+                        src="/m3.png"
                         alt="Machine Learning Portfolio Image 3"
+                        width={250}
+                        height={350}
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -179,8 +197,10 @@ const Page5 = () => {
                   <SwiperSlide>
                     <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
                       <Image
-                        src="m4.png"
+                        src="/m4.png"
                         alt="Machine Learning Portfolio Image 4"
+                        width={250}
+                        height={350}
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -193,8 +213,10 @@ const Page5 = () => {
                   <SwiperSlide>
                     <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
                       <Image
-                        src="p1.png"
+                        src="/p1.png"
                         alt="Frontend Portfolio Image 1"
+                        width={250}
+                        height={350}
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -202,8 +224,10 @@ const Page5 = () => {
                   <SwiperSlide>
                     <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
                       <Image
-                        src="p2.png"
+                        src="/p2.png"
                         alt="Frontend Portfolio Image 2"
+                        width={250}
+                        height={350}
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -211,17 +235,21 @@ const Page5 = () => {
                   <SwiperSlide>
                     <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
                       <Image
-                        src="p3.png"
-                        alt="Frontend Portfolio Image 1"
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
-                      <Image
-                        src="p4.png"
+                        src="/p3.png"
                         alt="Frontend Portfolio Image 2"
+                        width={250}
+                        height={350}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
+                      <Image
+                        src="/p4.png"
+                        alt="Frontend Portfolio Image 2"
+                        width={250}
+                        height={350}
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -234,8 +262,10 @@ const Page5 = () => {
                   <SwiperSlide>
                     <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
                       <Image
-                        src="n1.png"
+                        src="/n1.png"
                         alt="Infrastructure Portfolio Image 1"
+                        width={250}
+                        height={350}
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -243,8 +273,10 @@ const Page5 = () => {
                   <SwiperSlide>
                     <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
                       <Image
-                        src="n2.png"
+                        src="/n2.png"
                         alt="Infrastructure Portfolio Image 2"
+                        width={250}
+                        height={350}
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -252,17 +284,21 @@ const Page5 = () => {
                   <SwiperSlide>
                     <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
                       <Image
-                        src="n3.png"
-                        alt="Infrastructure Portfolio Image 1"
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
-                      <Image
-                        src="n4.png"
+                        src="/n3.png"
                         alt="Infrastructure Portfolio Image 2"
+                        width={250}
+                        height={350}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="w-[250px] h-[350px] rounded-xl overflow-hidden shadow-lg transform hover:w-[300px] hover:h-[500px] transition-all duration-300">
+                      <Image
+                        src="/n4.png"
+                        alt="Infrastructure Portfolio Image 2"
+                        width={250}
+                        height={350}
                         className="w-full h-full object-cover"
                       />
                     </div>

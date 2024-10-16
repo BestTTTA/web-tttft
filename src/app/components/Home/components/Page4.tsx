@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react';     
 import Image from 'next/image';
 
 const Page4 = () => {
@@ -20,7 +20,7 @@ const Page4 = () => {
             {/* Feature 1 */}
             <li className="flex items-center space-x-3 justify-center">
               <span className="rounded-full p-2">
-                <Image src="/Icons-feature.png" alt="Feature 1" className="w-8 h-8" />
+                <Image src="/Icons-feature.png" alt="Feature 1" width={32} height={32} className="w-8 h-8" />
               </span>
               <span>nothatIvefoundyou,Imnever</span>
             </li>
@@ -28,7 +28,7 @@ const Page4 = () => {
             {/* Feature 2 */}
             <li className="flex items-center space-x-3 justify-center">
               <span className="rounded-full p-2">
-                <Image src="/Icons-feature.png" alt="Feature 2" className="w-8 h-8" />
+                <Image src="/Icons-feature.png" alt="Feature 2" width={32} height={32} className="w-8 h-8" />
               </span>
               <span>Evenafterallthistime,youstillkii</span>
             </li>
@@ -36,7 +36,7 @@ const Page4 = () => {
             {/* Feature 3 */}
             <li className="flex items-center space-x-3 justify-center">
               <span className="rounded-full p-2">
-                <Image src="/Icons-feature.png" alt="Feature 3" className="w-8 h-8" />
+                <Image src="/Icons-feature.png" alt="Feature 3" width={32} height={32} className="w-8 h-8" />
               </span>
               <span>Becauseyoreinmylife,Iknow</span>
             </li>
@@ -44,7 +44,7 @@ const Page4 = () => {
             {/* Feature 4 */}
             <li className="flex items-center space-x-3 justify-center">
               <span className="rounded-full p-2">
-                <Image src="/Icons-feature.png" alt="Feature 4" className="w-8 h-8" />
+                <Image src="/Icons-feature.png" alt="Feature 4" width={32} height={32} className="w-8 h-8" />
               </span>
               <span>Youhavemademeanincredibly</span>
             </li>
@@ -56,8 +56,9 @@ const Page4 = () => {
           <Image
             src="/Frame 2.png"
             alt="Feature illustration"
+            width={540}
+            height={500}
             className="rounded-lg shadow-lg"
-            style={{ width: '540px', height: '500px' }}
           />
         </div>
       </div>
@@ -67,7 +68,8 @@ const Page4 = () => {
         <Image
           src="/Group.png"
           alt="Additional illustration"
-          style={{ width: '841.39px', height: '442px' }}
+          width={841.39}
+          height={442}
         />
       </div>
     </section>

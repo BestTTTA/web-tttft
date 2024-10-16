@@ -14,8 +14,10 @@ const Page6 = () => {
       {/* Background image */}
       <div className="relative max-w-6xl mx-auto">
         <Image
-          src="Map.png"
+          src="/Map.png"
           alt="World map"
+          width={1246}
+          height={629}
           className="w-[1246px] h-[629px] object-cover mb-8 opacity-80"
         />
 
@@ -26,6 +28,8 @@ const Page6 = () => {
               <Image
                 src="/mitrphol.png"
                 alt="Partner 1"
+                width={300}
+                height={150}
                 className="w-[300px] h-[150px] object-contain mx-auto"
               />
             </div>
@@ -33,6 +37,8 @@ const Page6 = () => {
               <Image
                 src="/knacx.png"
                 alt="Partner 2"
+                width={300}
+                height={160}
                 className="w-[300px] h-[160px] object-contain mx-auto"
               />
             </div>
@@ -40,6 +46,8 @@ const Page6 = () => {
               <Image
                 src="/clinter.png"
                 alt="Partner 3"
+                width={300}
+                height={150}
                 className="w-[300px] h-[150px] object-contain mx-auto"
               />
             </div>
@@ -47,6 +55,8 @@ const Page6 = () => {
               <Image
                 src="/eqtechenergy.png"
                 alt="Partner 4"
+                width={300}
+                height={150}
                 className="w-[300px] h-[150px] object-contain mx-auto"
               />
             </div>
