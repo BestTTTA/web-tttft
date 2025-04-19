@@ -62,7 +62,7 @@ const Page3 = () => {
               height={370}
             />
             {/* Briefcase Icon overlapping the image */}
-            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-white p-2 rounded-full shadow-md">
+            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2">
               <Image
                 src="/figure.svg"
                 alt="Briefcase Icon"
@@ -106,7 +106,7 @@ const Page3 = () => {
               width={370}
               height={370}
             />
-            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-white p-2 rounded-full shadow-md">
+            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 p-2">
               <Image
                 src="/figure1.svg"
                 alt="Briefcase Icon"
@@ -147,7 +147,7 @@ const Page3 = () => {
               width={370}
               height={370}
             />
-            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-white p-2 rounded-full shadow-md">
+            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 p-2">
               <Image
                 src="/figur2.svg"
                 alt="Briefcase Icon"

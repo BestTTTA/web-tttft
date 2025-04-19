@@ -31,8 +31,7 @@ const Page6 = () => {
                 alt="Partner 1"
                 width={300}
                 height={150}
-                className="w-[80px] sm:w-[120px] lg:w-[180px] h-auto object-contain 
-                          transform hover:scale-110 transition-transform duration-300"
+                className="w-[80px] sm:w-[120px] lg:w-[180px] h-auto object-contain transform hover:scale-110 transition-transform duration-300"
               />
             </div>
             <div className="flex items-center justify-center">
@@ -41,8 +40,7 @@ const Page6 = () => {
                 alt="Partner 2"
                 width={300}
                 height={160}
-                className="w-[100px] sm:w-[150px] lg:w-[200px] h-auto object-contain 
-                          transform hover:scale-110 transition-transform duration-300"
+                className="w-[100px] sm:w-[150px] lg:w-[200px] h-auto object-contain transform hover:scale-110 transition-transform duration-300"
               />
             </div>
             <div className="flex items-center justify-center">
@@ -51,8 +49,7 @@ const Page6 = () => {
                 alt="Partner 3"
                 width={300}
                 height={150}
-                className="w-[100px] sm:w-[150px] lg:w-[200px] h-auto object-contain 
-                          transform hover:scale-110 transition-transform duration-300"
+                className="w-[100px] sm:w-[150px] lg:w-[200px] h-auto object-contain transform hover:scale-110 transition-transform duration-300"
               />
             </div>
             <div className="flex items-center justify-center">
