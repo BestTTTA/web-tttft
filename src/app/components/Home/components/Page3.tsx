@@ -66,10 +66,10 @@ const Page3 = () => {
               <Image
                 src="/figure.svg"
                 alt="Briefcase Icon"
-                className="w-8 h-8"
                 width={60}
                 height={60}
               />
+
             </div>
           </div>
           {/* Title */}
@@ -110,7 +110,6 @@ const Page3 = () => {
               <Image
                 src="/figure1.svg"
                 alt="Briefcase Icon"
-                className="w-8 h-8"
                 width={60}
                 height={60}
               />
@@ -151,7 +150,6 @@ const Page3 = () => {
               <Image
                 src="/figur2.svg"
                 alt="Briefcase Icon"
-                className="w-8 h-8"
                 width={60}
                 height={60}
               />
@@ -197,4 +195,4 @@ const Page3 = () => {
   );
 };
 
-export default Page3;3;
+export default Page3; 3;
